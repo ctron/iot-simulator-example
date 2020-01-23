@@ -1,0 +1,21 @@
+apiVersion: iot.dentrassi.de/v1alpha1
+kind: Simulator
+metadata:
+  name: enmasse
+  namespace: iot-simulator
+spec:
+  endpoint:
+    messaging:
+      user: consumer
+      password: foobar
+      host: "${MESSAGING_HOST}"
+      port: 5671
+      caCertificate: "${CA_CERT}"
+    registry:
+      url: "https://iot-device-registry.enmase-infra.svc"
+    adapters:
+      mqtt:
+        host: mqtt-adapter.enmase-infra.svc
+        port: 8883
+      http:
+        url: "https://http-adapter.enmase-infra.svc"
