@@ -76,8 +76,12 @@ Get the necessary information:
 
     export MESSAGING_HOST=$(oc -n myapp get addressspace iot -o 'jsonpath={ .status.endpointStatuses[?(@.name=="messaging")].serviceHost }')
     export CA_CERT=$(oc -n myapp get addressspace iot -o 'jsonpath={ .status.caCert }')
+    export MGMT_TOKEN=$(oc whoami -t)
 
 And then apply the configuration:
 
     cat deploy/040-Simulator/010-Simulator.yaml.in | envsubst | oc apply -f -
 
+## Deploy the simulator workload
+
+    oc apply -f deploy/050-Workload

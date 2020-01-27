@@ -1,0 +1,10 @@
+apiVersion: iot.dentrassi.de/v1alpha1
+kind: SimulatorConsumer
+metadata:
+  name: consumer1
+  namespace: iot-simulator
+spec:
+  simulator: enmasse
+  tenant: myapp.iot
+  type: telemetry
+  replicas: 1

@@ -1,0 +1,12 @@
+apiVersion: iot.dentrassi.de/v1alpha1
+kind: SimulatorProducer
+metadata:
+  name: producer1
+  namespace: iot-simulator
+spec:
+  simulator: enmasse
+  tenant: myapp.iot
+  type: telemetry
+  protocol: http
+  replicas: 1
+  numberOfDevices: 10

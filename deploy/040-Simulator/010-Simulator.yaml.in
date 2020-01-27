@@ -5,6 +5,7 @@ metadata:
   namespace: iot-simulator
 spec:
   endpoint:
+    insecureTls: true
     messaging:
       user: consumer
       password: foobar
@@ -12,10 +13,12 @@ spec:
       port: 5671
       caCertificate: "${CA_CERT}"
     registry:
-      url: "https://iot-device-registry.enmase-infra.svc"
+      url: "https://iot-device-registry.enmasse-infra.svc.cluster.local.:8443/v1"
+      apiVersion: V1
+      token: "${MGMT_TOKEN}"
     adapters:
       mqtt:
-        host: mqtt-adapter.enmase-infra.svc
+        host: iot-mqtt-adapter.enmasse-infra.svc.cluster.svc.local.
         port: 8883
       http:
-        url: "https://http-adapter.enmase-infra.svc"
+        url: "https://iot-http-adapter.enmasse-infra.svc.cluster.local.:8443"
