@@ -82,6 +82,11 @@ And then apply the configuration:
 
     cat deploy/040-Simulator/010-Simulator.yaml.in | envsubst | oc apply -f -
 
+**Note:** When using `$(oc whoami -t)`, you will use the current user's token for authenticating. The user of this
+          token must have permissions to access the `IoTProject` created earlier on. As this also is the token of
+          a user, the token will expire. Normally after 24h of logging in the user. Alternatively you can create a
+          service account, get that token, and use it instead.
+
 ## Deploy the simulator workload
 
     oc apply -f deploy/050-Workload
