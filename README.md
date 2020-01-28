@@ -16,7 +16,7 @@ This demostration is split up into 4 major modules that are deployed in 4 differ
 1. Simulator
     * Manages the Producer and Consumer
 2. Producer 
-    * Generates arbitrary MQTT or HTPP telemetry messages that are sent to EnMasse's IOT protocol adapter(Eclipse Hono)
+    * Generates arbitrary MQTT or HTTP telemetry messages that are sent to EnMasse's IoT protocol adapter (Eclipse Hono)
 3. Consumer 
     * Consumes the Telemetry messages produced by the Enmasse instance 
 4. Web Console
@@ -155,4 +155,3 @@ If everything is working correctly you should be able to open the web console at
 ![web-console](https://raw.githubusercontent.com/astoycos/iot-simulator-example/master/doc/Screenshot%20from%202020-01-27%2015-59-52.jpg)
 
    
-
