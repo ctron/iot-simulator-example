@@ -150,7 +150,7 @@ Wait until the above steps are complete (i.e the simulator, producer, consumer, 
 
 If everything is working correctly you should be able to open the web console at 
    
-   `iot-simulator-console-iot-simulator.apps.<your cluster>`
+    iot-simulator-console-iot-simulator.apps.<your cluster>
    
 
 ![web-console](https://raw.githubusercontent.com/astoycos/iot-simulator-example/master/doc/Screenshot%20from%202020-01-27%2015-59-52.jpg)
