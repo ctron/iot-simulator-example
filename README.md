@@ -25,7 +25,7 @@ This demostration is split up into 4 major modules that are deployed in 4 differ
 
 # Deploy the IoT simulator
 
-This Demo can be deployed on either a **remote** or **local** openshift instance 
+This Demo can be deployed on either a **remote** or **local** OpenShift instance 
 
 ## Remotely 
 
