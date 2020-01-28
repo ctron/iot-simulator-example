@@ -76,7 +76,8 @@ Unpack the archive:
     cd ..
 
 Install the bundle  
- `oc apply -f enmasse/install/bundles/enmasse`
+
+    oc apply -f enmasse/install/bundles/enmasse`
  
 
 ## Configuring EnMasse
