@@ -1,4 +1,4 @@
-# Iot Simulator
+# IoT Simulator
 
 ## Background 
 
@@ -155,5 +155,4 @@ If everything is working correctly you should be able to open the web console at
 ![web-console](https://raw.githubusercontent.com/astoycos/iot-simulator-example/master/doc/Screenshot%20from%202020-01-27%2015-59-52.jpg)
 
    
-
 
