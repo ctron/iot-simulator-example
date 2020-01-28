@@ -42,7 +42,7 @@ If using CRC, first create a new machine using the following command:
 1. Log in as admin
 2. Make new project titled "enmasse-infra" 
     
-    `oc new-project enmasse-infra`
+       oc new-project enmasse-infra
 
 ## Getting EnMasse
 
