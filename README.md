@@ -48,6 +48,19 @@ If using CRC, first create a new machine using the following command:
 
 There are two ways to Deploy enmasse to your cluster, either **manually** or via the provided [**Enmasse operator**](https://operatorhub.io/operator/enmasse)
 
+Reguardless please download and install the enmasse Tarball since we do some setup with these via the commandline
+
+Download EnMasse:
+
+    curl -sL https://github.com/EnMasseProject/enmasse/releases/download/0.30.2/enmasse-0.30.2.tgz -o enmasse.tar.gz
+
+Unpack the archive:
+
+    mkdir enmasse
+    cd enmasse
+    tar --strip-components=1 -xzf ../enmasse.tar.gz
+    cd ..
+
 ### Operator
 
 Using Openshift's web console navagate to the "Operatorhub" tab and search for "enmasse" 
@@ -64,16 +77,10 @@ Choose to "install in a specific namespace" and make sure the project enmasse-in
 
 ### Manually
 
-Download EnMasse:
+Make sure you are on the correct openshift project 
 
-    curl -sL https://github.com/EnMasseProject/enmasse/releases/download/0.30.2/enmasse-0.30.2.tgz -o enmasse.tar.gz
-
-Unpack the archive:
-
-    mkdir enmasse
-    cd enmasse
-    tar --strip-components=1 -xzf ../enmasse.tar.gz
-    cd ..
+   `[astoycos@localhost iot-simulator-example]$ oc project enmasse-infra
+   Now using project "enmasse-infra" on server "https://api.astoycos-ocp.shiftstack.com:6443".`
 
 Install the bundle  
 
